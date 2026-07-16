@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles | DLSJBC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="Photos/dlsjbc-logo.png" alt="DLSJBC logo">
+                <span>DLSJBC</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="articles.html" class="nav-link">Articles</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode" type="button">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <p class="eyebrow">Articles</p>
+                <h1>Latest News and Stories</h1>
+                <p>Explore recent updates, student achievements, and announcements shared by the DLSJBC community.</p>
+            </div>
+            <div class="page-visual articles-hero-slideshow">
+                <div class="news-slideshow-container articles-slideshow-container" id="articlesSlideshow">
+                    <button class="slideshow-nav slideshow-prev" onclick="changeArticlesSlide(-1)" title="Previous Photo">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slideshow-nav slideshow-next" onclick="changeArticlesSlide(1)" title="Next Photo">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button class="slideshow-fullscreen" onclick="toggleArticlesFullscreen()" title="Fullscreen View">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="articles-feed-header">
+                <div>
+                    <p class="eyebrow">All Posts</p>
+                    <h2>Latest stories from DLSJBC</h2>
+                </div>
+                <p class="articles-feed-copy">Browse recent announcements, campus events, academic milestones, and community highlights from the school’s official updates.</p>
+            </div>
+            <div class="articles-grid" id="articlesFeedList"></div>
+            <div class="article-modal" id="articleModal" aria-hidden="true">
+                <div class="article-modal-content" role="dialog" aria-modal="true" aria-labelledby="articleModalTitle">
+                    <button class="article-modal-close" type="button" id="closeArticleModal" aria-label="Close article">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <img id="articleModalImage" src="" alt="" />
+                    <div class="article-modal-body">
+                        <p class="article-meta" id="articleModalMeta"></p>
+                        <h3 id="articleModalTitle"></h3>
+                        <div id="articleModalText"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 De La Salle John Bosco College. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

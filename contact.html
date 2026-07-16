@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | DLSJBC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="Photos/dlsjbc-logo.png" alt="DLSJBC logo">
+                <span>DLSJBC</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="articles.html" class="nav-link">Articles</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode" type="button">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content contact-page">
+        <div class="container">
+            <div class="page-header contact-header">
+                <p class="eyebrow">Contact</p>
+                <h1>Contact Us</h1>
+                <p>Send us a message and we’ll get back to you shortly for admissions, school inquiries, or general questions about life at DLSJBC.</p>
+            </div>
+
+            <div class="contact-main-row">
+                <section class="page-card contact-card contact-details-card">
+                    <h2>Get in Touch</h2>
+                    <p>We are here to assist you with admissions inquiries, school concerns, and general information.</p>
+                    <div class="contact-info-list">
+                        <div class="contact-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>De La Salle Drive, Mangagoy, Bislig City, Surigao del Sur, Philippines</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@dlsjbc.edu.ph</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+63 86 853 3415</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Monday to Friday, 8:00 AM to 5:00 PM</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-inline">
+                        <h3>Send us a message</h3>
+                        <form class="page-form contact-form">
+                            <input type="text" placeholder="Your Name" required />
+                            <input type="email" placeholder="Your Email" required />
+                            <input type="text" placeholder="Subject" />
+                            <textarea rows="4" placeholder="Your Message" required></textarea>
+                            <button class="btn btn-primary" type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </section>
+
+                <div class="page-visual contact-photo-card">
+                    <img src="Photos/Contact/bd91d4_551929a2108044e0a1f6f38d88108044~mv2.avif" alt="DLSJBC contact and campus view" />
+                </div>
+            </div>
+
+            <section class="page-card contact-map-card">
+                <div class="contact-map-header">
+                    <div>
+                        <h2>Our Location</h2>
+                        <p>Visit our campus at De La Salle Drive, Mangagoy, Bislig City.</p>
+                    </div>
+                    <label class="contact-map-toggle" for="terrainToggle">
+                        <input type="checkbox" id="terrainToggle" />
+                        <span>Terrain</span>
+                    </label>
+                </div>
+                <div class="contact-map-frame">
+                    <iframe
+                        id="contactMap"
+                        title="DLSJBC campus map"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        src="https://www.google.com/maps?q=De+La+Salle+John+Bosco+College+Mangagoy+Bislig&output=embed&maptype=satellite"
+                    ></iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 De La Salle John Bosco College. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

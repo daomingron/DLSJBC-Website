@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De La Salle John Bosco College - Committed to Excellence</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="Photos/dlsjbc-logo.png" alt="DLSJBC logo">
+                <span>DLSJBC</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="articles.html" class="nav-link">Articles</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slideshow-wrapper">
+            <div class="news-slideshow-container" id="heroSlideshow">
+                <!-- Navigation Arrows -->
+                <button class="slideshow-nav slideshow-prev" onclick="changeHeroSlide(-1)" title="Previous Photo">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slideshow-nav slideshow-next" onclick="changeHeroSlide(1)" title="Next Photo">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <!-- Fullscreen Button -->
+                <button class="slideshow-fullscreen" onclick="toggleHeroFullscreen()" title="Fullscreen View">
+                    <i class="fas fa-expand"></i>
+                </button>
+
+                <div class="news-slide fade">
+                    <img src="Photos/home/c19ea6_41dd3ce95d794069a463c55953a80c71~mv2.avif" alt="DLSJBC campus view">
+                    <div class="news-overlay"></div>
+                </div>
+                <div class="news-slide fade">
+                    <img src="Photos/home/c19ea6_59095f022a614c25bb2537bf84b3c20a~mv2.avif" alt="DLSJBC community activity">
+                    <div class="news-overlay"></div>
+                </div>
+                <div class="news-slide fade">
+                    <img src="Photos/home/c19ea6_be2c35991879431a9bbc99407b343abf~mv2.avif" alt="DLSJBC school environment">
+                    <div class="news-overlay"></div>
+                </div>
+            </div>
+            <div class="slideshow-controls" id="heroSlideshowControls">
+                <span class="dot active" onclick="currentHeroSlide(1)"></span>
+                <span class="dot" onclick="currentHeroSlide(2)"></span>
+                <span class="dot" onclick="currentHeroSlide(3)"></span>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">De La Salle John Bosco College</h1>
+            <p class="hero-subtitle">Committed to Excellence in Education</p>
+            <button class="btn btn-primary" onclick="smoothScroll('about')">Discover More</button>
+        </div>
+    </section>
+
+    <!-- News and Calendar Section -->
+    <section class="news-calendar-section" id="articles">
+        <div class="container">
+            <div class="section-intro">
+                <p class="eyebrow">News</p>
+                <h2 class="section-title">News and Calendar</h2>
+                <p>Stay informed about admissions, school events, and the latest achievements shared by the DLSJBC community.</p>
+            </div>
+            <div class="news-calendar-grid">
+                <div class="news-stack">
+                    <article class="home-news-card card-hover">
+                        <img src="Photos/Articles/admission-sy-2024-2025-now-ongoing.jpg" alt="Admission for SY 2024-2025 is now ongoing">
+                        <div class="home-news-content">
+                            <span class="news-date">Jun 5, 2024</span>
+                            <h3>Admission for SY 2024-2025 is Now Ongoing</h3>
+                            <p>Heads up, future Lasallian enthusiasts! DLSJBC is ready to open doors to all levels and welcome new learners into the community.</p>
+                            <a href="articles.html" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="home-news-card card-hover">
+                        <img src="Photos/Articles/Alumni%20Homecoming%202024.jpg" alt="Alumni Homecoming 2024">
+                        <div class="home-news-content">
+                            <span class="news-date">May 6, 2024</span>
+                            <h3>Alumni Homecoming 2024</h3>
+                            <p>Mark your calendars for the most exciting event of the year filled with nostalgia, laughter, and celebration of achievements.</p>
+                            <a href="articles.html" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="home-news-card card-hover">
+                        <img src="Photos/Articles/𝙍𝙚𝙖𝙙𝙮%20𝙩𝙤%20𝙬𝙧𝙞𝙩𝙚%20𝙩𝙝𝙚%20𝙣𝙚𝙭𝙩%20𝙘𝙝𝙖𝙥𝙩𝙚𝙧%20𝙤𝙛%20𝙮𝙤𝙪𝙧%20𝙖𝙘𝙖𝙙𝙚𝙢𝙞𝙘%20𝙟𝙤𝙪𝙧𝙣𝙚𝙮.jpg" alt="Ready to write the next chapter of your academic journey?">
+                        <div class="home-news-content">
+                            <span class="news-date">Apr 2, 2024</span>
+                            <h3>Ready to Write the Next Chapter of Your Academic Journey?</h3>
+                            <p>Prepare to soar as pre-enrollment opens at De La Salle John Bosco College and choose the path that fits your future.</p>
+                            <a href="articles.html" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <aside class="calendar-card card-hover">
+                    <div class="calendar-card-header">
+                        <p class="eyebrow">Calendar</p>
+                        <h3>Upcoming Events</h3>
+                    </div>
+                    <ul class="calendar-list">
+                        <li><span>May 1, 2024</span><strong>Labor Day</strong></li>
+                        <li><span>May 4, 2024</span><strong>HMTM Pinning Ceremony</strong></li>
+                        <li><span>May 10, 2024</span><strong>2nd Trimester Honors Convocation</strong></li>
+                        <li><span>May 11, 2024</span><strong>HMTM Seminar Workshop</strong></li>
+                        <li><span>May 23, 2024</span><strong>BED/SHS Baccalaureate Mass</strong></li>
+                        <li><span>May 24, 2024</span><strong>BED Completion Rites and SHS Commencement Exercises</strong></li>
+                        <li><span>May 31, 2024</span><strong>NSTP Graduation and Completion Ceremony</strong></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About DLSJBC</h3>
+                    <p>De La Salle John Bosco College is committed to Lasallian excellence in education, developing competent, moral, and faith-filled individuals.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#admissions">Admissions</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#articles">Articles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link hover-effect"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link hover-effect"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link hover-effect"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link hover-effect"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 De La Salle John Bosco College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

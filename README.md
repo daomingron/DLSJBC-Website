@@ -1,4 +1,5 @@
 # De La Salle John Bosco College - Revised Website
+https://daomingron.github.io/DLSJBC-Website/
 
 A modern, responsive educational website redesign for De La Salle John Bosco College featuring advanced animations and interactive features. This is a school project demonstrating professional web development techniques.
 
